@@ -9,12 +9,194 @@
 }
 
 body {
-    background-color: var(--white);
-    color: var(--black);
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 1200px;
+}
 
+.image-section {
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-section {
+    padding: 20px;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    max-width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.trial-banner {
+    background-color: #f9c846;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.form-group label, .form-group input, .form-group select {
+    width: 48%;
+    display: block;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Add margin to create space between fields */
+}
+
+.password-hint {
+    font-size: 12px;
+    color: #777;
+    width: 100%;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .image-section {
+        display: block;
+        width: 50%;
+        height: auto;
+        background-image: url("../work-at-home-with-pets.jpg");
+    }
+
+    .form-section {
+        width: 50%;
+        padding: 40px;
+    }
+
+    header {
+        text-align: left;
+    }
+}
+
+@media (min-width: 820px) {
+    .image-section {
+        background-image: url("../work-at-home-with-pets.jpg");
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-section {
+        background-image: url("../work-at-home.webp");
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+    .form-section {
+        padding: 50px;
+    }
+}
 
 /* ON YOUR OWN
 
